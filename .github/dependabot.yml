@@ -1,0 +1,23 @@
+version: 2
+updates:
+  - package-ecosystem: docker
+    directory: /
+    schedule:
+      interval: weekly
+    cooldown:
+      default-days: 7
+    assignees:
+      - yamatt
+    labels:
+      - "dependabot"
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+    cooldown:
+      default-days: 7
+    assignees:
+      - yamatt
+    labels:
+      - "dependabot"
