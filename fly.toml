@@ -1,4 +1,4 @@
-# fly.toml app configuration file generated for hayel-mc on 2026-08-21T12:24:18+01:00
+# fly.toml app configuration file generated for buildkite-agent on 2026-10-09T17:21:38+01:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
@@ -6,20 +6,19 @@
 primary_region = 'lhr'
 
 [build]
-[[mounts]]
-source = 'repositories'
-destination = '/repositories'
-
 [http_service]
 internal_port = 8080
 force_https = true
-auto_stop_machines = "suspend"
 auto_start_machines = true
 min_machines_running = 0
+processes = ['app']
+idle_timeout = '900'
+
+[[restart]]
+policy = 'never'
 processes = ['app']
 
 [[vm]]
 cpu_kind = 'shared'
 cpus = 4
-memory = '2gb'
-rootfs_size = "10GB"
+memory_mb = 2048
