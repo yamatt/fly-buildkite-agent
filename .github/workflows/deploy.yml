@@ -6,13 +6,9 @@ on:
     branches:
       - main
     paths:
-      - "**.go"
-      - "**.mod"
-      - "**.sum"
-      - "cmd/**"
-      - "internal/**"
       - ".github/workflows/fly-deploy.yml"
       - "fly.toml"
+      - "Dockerfile"
 
 permissions:
   contents: read
