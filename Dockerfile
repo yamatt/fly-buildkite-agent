@@ -1,1 +1,1 @@
-FROM ghcr.io/buildkite/agent:sha256:73ce179d101063c6c8e3e4d21bef188778cd185d2e2013d5ede23f074e7ab1c7 # 4.3.0-ubuntu-26.044.3.0-ubuntu-26.04
+FROM ghcr.io/buildkite/agent@sha256:73ce179d101063c6c8e3e4d21bef188778cd185d2e2013d5ede23f074e7ab1c7 # 4.3.0-ubuntu-26.04
