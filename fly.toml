@@ -15,6 +15,7 @@ processes = ['app']
 idle_timeout = '900'
 
 [env]
+BUILDKITE_AGENT_NAME = 'fly-buildkite-agent'
 BUILDKITE_AGENT_DISCONNECT_AFTER_JOB = 'true'
 BUILDKITE_AGENT_DISCONNECT_AFTER_UPTIME = '60'
 BUILDKITE_WRITE_JOB_LOGS_TO_STDOUT = 'true'
