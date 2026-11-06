@@ -8,8 +8,13 @@ updates:
       default-days: 7
     assignees:
       - yamatt
+    groups:
+      minor-patch:
+        patterns: ["*"]
+        update-types: ["minor", "patch"]
     labels:
-      - "dependabot"
+      - dependency
+      - docker
 
   - package-ecosystem: github-actions
     directory: /
@@ -19,5 +24,10 @@ updates:
       default-days: 7
     assignees:
       - yamatt
+    groups:
+      minor-patch:
+        patterns: ["*"]
+        update-types: ["minor", "patch"]
     labels:
-      - "dependabot"
+      - dependency
+      - github-actions
