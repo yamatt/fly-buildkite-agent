@@ -1,4 +1,4 @@
 # 4.3.0-ubuntu-26.04
-FROM ghcr.io/buildkite/agent@sha256:83d54b18b5e9b71ac25fb49af8468cf92ea388cba3290cd2691637ff13249bf0
+FROM ghcr.io/buildkite/agent@sha256:98db6fe2084e2841fe2855abc1e2ceb2c01a9a7831fcd1ed6061e87df702bbbc
 
 CMD ["start"]
